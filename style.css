@@ -1,0 +1,53 @@
+.body {
+  background-color: black;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+  margin-top: 50px;
+}
+
+#selectionSelect {
+  align-content: center;
+}
+
+.title {
+  color: white;
+  font-family: "Open Sans";
+  text-align: center;
+  font: 20px;
+  margin-top: 50px;
+}
+
+.copyright {
+  color: white;
+  font-family: "Open Sans";
+  text-align: center;
+  font: 25pt;
+  margin-top: 50px;
+}
+
+.container-category {
+  display: grid;
+  grid-template-columns: 2, 1fr;
+  grid-template-areas:
+    "a b"
+    "c d"
+    "e f"
+    "g h"
+    "i j"
+    "k l";
+  height: 100vh;
+}
+
+@media only screen and (min-width: 601px) {
+  .container-category {
+    grid-template-areas:
+      "a b c d e f"
+      "g h i j k l";
+  }
+  grid-template-columns: (6, 1fr);
+}

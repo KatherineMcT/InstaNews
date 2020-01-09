@@ -58,5 +58,24 @@
       "a b c d e f"
       "g h i j k l";
   }
-  grid-template-columns: (6, 1fr);
+}
+
+.grid {
+  position: relative;
+}
+
+.gridImage {
+  object-fit: cover;
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.gridTitles {
+  text-align: center;
+  font-family: "Open Sans";
+  color: white;
+  position: absolute;
+  bottom: 0px;
 }
